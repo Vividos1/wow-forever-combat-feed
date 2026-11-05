@@ -31,6 +31,4 @@ The public installation archive is being prepared for GitHub distribution. Once 
 
 WoW Forever's combat API does not reliably identify every damage source or spell. The addon may show `Unknown attacker` for additional enemies in multi-target fights. Damage summaries may reflect an entire encounter.
 
-## Downloads
 
-The v0.5.0 installation ZIP is not yet hosted on GitHub. Please wait for a named archive under `downloads/` or a GitHub Release; the repository's auto-generated source ZIP is **not** an installation package.
