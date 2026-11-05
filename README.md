@@ -1,38 +1,36 @@
 # Forever Combat Feed
 
-A compact, combat-only scrolling damage feed addon for World of Warcraft: Forever.
+A compact combat-only scrolling damage feed addon for **World of Warcraft: Forever**, developed by **OldBeardedGaming**.
 
-**Author:** OldBeardedGaming  
-**Stable version:** v0.5.0
-
-## Install
-
-1. Download `ForeverCombatFeed-v0.5.0.zip` from the `downloads` folder.
-2. Extract the archive, preserving the `ForeverCombatFeed` folder.
-3. Place that folder into your WoW Forever `Interface/AddOns` directory.
-4. Enable the addon at character selection and type `/reload` in game.
-
-Do **not** install GitHub's automatic *Download ZIP* of the entire repository; use the named addon ZIP in `downloads`.
+**Stable version:** v0.5.0 (tested in-game)
 
 ## Features
 
-- Appears automatically in combat, with adjustable hide delay
-- Compact scrollable, movable, resizable combat window
-- Numbers on the left, ability names on the right, optional spell icons
-- Configurable font, colors, opacity, scroll direction, and lock state
-- Movable settings window, minimap button, and AddOns options entry
-- Optional suppression of Blizzard floating combat text
-- Optional post-combat summary with XP and available encounter totals
+- Automatic combat-only display and adjustable hide timer
+- Left-aligned scrolling damage feed with selectable newest-first/newest-last order
+- Configurable colors, font size, transparency, and spell icons
+- Movable, resizable, and lockable feed window
+- Movable options panel and draggable minimap button
+- Optional floating combat text suppression
+- Optional defeated-target summaries and encounter statistics
 
-## Limitations
+## Install
 
-Some attacker and ability names are inferred due to WoW Forever addon API restrictions. In multi-target fights, incoming damage may show `Unknown attacker`; totals may reflect an entire encounter rather than an individual enemy.
+The public installation archive is being prepared for GitHub distribution. Once `ForeverCombatFeed-v0.5.0.zip` appears in this repository:
 
-## Commands
+1. Download the **named addon ZIP** (not GitHub's general repository ZIP).
+2. Extract it into your WoW Forever `Interface/AddOns` directory.
+3. Ensure the folder is named `ForeverCombatFeed` and directly contains `ForeverCombatFeed.toc`, `Core.lua`, and `Options.lua`.
+4. Enable the addon and use `/reload` in game.
 
-`/fcf` opens settings; `/fcf test` previews sample entries; `/fcf move` previews movement and resize; `/fcf lock` locks the window.
+## Slash commands
 
-## Release
+`/fcf` — options; `/fcf test` — sample feed; `/fcf move` — move and resize; `/fcf lock` — lock window.
 
-The v0.5.0 package was tested by its author in WoW Forever and is the frozen stable baseline while CurseForge review is pending. Report issues through GitHub Issues.
+## API limitations
 
+WoW Forever's combat API does not reliably identify every damage source or spell. The addon may show `Unknown attacker` for additional enemies in multi-target fights. Damage summaries may reflect an entire encounter.
+
+## Downloads
+
+The v0.5.0 installation ZIP is not yet hosted on GitHub. Please wait for a named archive under `downloads/` or a GitHub Release; the repository's auto-generated source ZIP is **not** an installation package.
