@@ -1,0 +1,8 @@
+## Interface: 16001
+## Title: Forever Combat Feed
+## Notes: Compact combat-only scrolling damage feed for WoW Forever
+## Author: Community prototype
+## Version: 0.5.0
+## SavedVariables: ForeverCombatFeedDB
+Core.lua
+Options.lua
